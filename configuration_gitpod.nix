@@ -54,27 +54,27 @@ in
 
   users.users.root.password = "root"; #global roots password
 
-  nix.settings.trusted-users = [ "hacker" ]; # Trust myself
+  nix.settings.trusted-users = [ "nixos" ]; # Trust myself
   users.users.eloco = {
     extraGroups = [ "wheel" ];
-    home                        = "/home/hacker";
-    password                    = "hacker";
+    home                        = "/home/nixos";
+    password                    = "nixos";
     isNormalUser                = true;
     shell                       = pkgs.zsh;
     openssh.authorizedKeys.keyFiles = [
       ./home-manager/authorized_keys
     ];
     #openssh.authorizedKeys.keys = [
-    #  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCmuP0V/e9T4fCPxAhSu1ECs8EP7/gBxnAy18UzR2tib7jCz74PIYOyN1BJ9eQfe7gRTW0OllqK61phikRm7KXq4TmFZNora0ZAAlJ5bifFpkDqPvz5GUB8yUp8aH8y8oiX1CAg0K/G9X/ZETGkiOkZidpIdHbtpWzMinDyCkRaQTs7c/Ehc53NMZNji3aBb+yYVP33r8lQ1mFbAAUcHiRdJ0rNOXYyX+qlcqtjwrw8HJura+yz+Nl9EtW8v5ynlGCOJKEfYjpPOv8OCKxCYqJToqQ615zSvMJ619Oyqsk0Ax1OSox5aTpIqCkED3iQJGZ9bH9e0FUNAR7xS2voDlJLSXTPLWqHruCpbHzzH9N5foHIdAK0E5spRgSOv6lNN02ccdCGnL47OYM++cWugqVIXeIuFLwGNOBy6rPjg+V5jthXklQVpATXGbwAMN7vLw96y4f9264UUYZ5ZnBsh6DYd0HeZEabfta3JJkVA8c1lm1U8czbhpWrJRr4bxkzvGJ79N++qDPgZ9KmKl/qjySqGpT/LZm8oC+sqmo+vYYfUKa1n+a6DjBhVk5i8Ooyy90vkNPbEtcuw4rMhQN5py1yPfwOr1kpEM6b7DA9PE+Wikw+w4/ytOp1UxJnJFZ6fdhI8n8jLk14ny68RSVFcbn15Wu4HKRG2VzQCyCsVPYmUw== hacker0@hacker"
-    #  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCZYejl+0DRkCpBCS/8zDI84l/NTp5kOGVCLY/mB4sYoh9XDmZsA2fINoHdDu6vyaLfMxJqpKrEjoBol+KK8jj4B9JIbYZRv7iaIXaOfsI8xWAeWZ8z1w2B3KFM0m4eyBjmQ787aNkDlZ//5TOTiOzOHZQ6VcgLb9ukf+TQk7tXpUSKU5z8c5WhERrK7N1kUeKWlfn7FjMg1NWhX36w0hVzU+D4P9dJAzrYWYgW34nbPXOesXP3DYtyLIx8gDpEyJmDReRAqHWKHrozB7p0AowhAmhmSdvC2Bd1cHgmSBV0tBGlDlq6ewrw2xUzZJNuVb3h7f2Avt8HS9dSP4h9R1n7q6efb8t3zatD3DPSjEJq57xcYX9Jhz2SEhtksxxez6bB0BFvly+4TwJyj0bbg6HtlU5/F4mOfmQXXLaDhwgZOplUbjj1SqOhQktBlRdsaEmfWezNbWgARUjBcZNYHp23/NOac8r3P3PI4crxqC1DreY4n0Rf7c9Po4ecC//HTG+4T0hiBaLM0KzN7c/eO06krhdMgFRBCMhmiLmdSxGRa9Paf5nLkMRe73MLIRmUVPJSyFMGZrDLgBwwwsReU+0h01UUNMlklZCdWKwClqbVWntdF1qIH7CUQl1cccaBC1hSbQA3q7UGA+rXZzHi54LrsIkYa6Oc/BpoFM9ZgG596w== hacker1@hacker"
-    #  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9jjcmrAlCiHWtdRC09CHZb0O9/UoR+FXyp45gvQxIVtxttC/uEp0GyoAYlt21AxuQ0T931Hztrqs+4HOZzIBZaytkG586qUEec/qznxXTgYtVpWUaKk2uFve9GfhohUO7sF0sRO2X+tlzvvFXLnpsNKd0paqQOUuidNHhufhKsVfRfrfPcEP03jxZEDu1XBy+Q3SyGTlOieL1e7+BLVA5bpeUM9hv2XZ0tldouyjmYoCgJiLDGaZjaYFtbsXwDSLiUiy22bjlpYtA5m1368zWPjtZVvX4xoLtFAc915qtpTuQVxsgp1BeFPFwpb/0L5KXozHb4gkX2IUyUHcq5CdVpDwoPYFS7XSBoOMeVKm6LJefjJFFwA9MMnZzT0zssIzAB3tXMQY+I/mR1CitLpc43fpielVE7o/+dkoza1gGuJSzzlNtp60mqWgX5BlT5IX/HQVP59cdgF2GK9S67r6dTHyhlIkiM0IpxXSUxA/Z//pMu+QjSfHHBN3rNu6xbN8= hacker2@hacker"
+    #  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCmuP0V/e9T4fCPxAhSu1ECs8EP7/gBxnAy18UzR2tib7jCz74PIYOyN1BJ9eQfe7gRTW0OllqK61phikRm7KXq4TmFZNora0ZAAlJ5bifFpkDqPvz5GUB8yUp8aH8y8oiX1CAg0K/G9X/ZETGkiOkZidpIdHbtpWzMinDyCkRaQTs7c/Ehc53NMZNji3aBb+yYVP33r8lQ1mFbAAUcHiRdJ0rNOXYyX+qlcqtjwrw8HJura+yz+Nl9EtW8v5ynlGCOJKEfYjpPOv8OCKxCYqJToqQ615zSvMJ619Oyqsk0Ax1OSox5aTpIqCkED3iQJGZ9bH9e0FUNAR7xS2voDlJLSXTPLWqHruCpbHzzH9N5foHIdAK0E5spRgSOv6lNN02ccdCGnL47OYM++cWugqVIXeIuFLwGNOBy6rPjg+V5jthXklQVpATXGbwAMN7vLw96y4f9264UUYZ5ZnBsh6DYd0HeZEabfta3JJkVA8c1lm1U8czbhpWrJRr4bxkzvGJ79N++qDPgZ9KmKl/qjySqGpT/LZm8oC+sqmo+vYYfUKa1n+a6DjBhVk5i8Ooyy90vkNPbEtcuw4rMhQN5py1yPfwOr1kpEM6b7DA9PE+Wikw+w4/ytOp1UxJnJFZ6fdhI8n8jLk14ny68RSVFcbn15Wu4HKRG2VzQCyCsVPYmUw== nixos0@nixos"
+    #  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCZYejl+0DRkCpBCS/8zDI84l/NTp5kOGVCLY/mB4sYoh9XDmZsA2fINoHdDu6vyaLfMxJqpKrEjoBol+KK8jj4B9JIbYZRv7iaIXaOfsI8xWAeWZ8z1w2B3KFM0m4eyBjmQ787aNkDlZ//5TOTiOzOHZQ6VcgLb9ukf+TQk7tXpUSKU5z8c5WhERrK7N1kUeKWlfn7FjMg1NWhX36w0hVzU+D4P9dJAzrYWYgW34nbPXOesXP3DYtyLIx8gDpEyJmDReRAqHWKHrozB7p0AowhAmhmSdvC2Bd1cHgmSBV0tBGlDlq6ewrw2xUzZJNuVb3h7f2Avt8HS9dSP4h9R1n7q6efb8t3zatD3DPSjEJq57xcYX9Jhz2SEhtksxxez6bB0BFvly+4TwJyj0bbg6HtlU5/F4mOfmQXXLaDhwgZOplUbjj1SqOhQktBlRdsaEmfWezNbWgARUjBcZNYHp23/NOac8r3P3PI4crxqC1DreY4n0Rf7c9Po4ecC//HTG+4T0hiBaLM0KzN7c/eO06krhdMgFRBCMhmiLmdSxGRa9Paf5nLkMRe73MLIRmUVPJSyFMGZrDLgBwwwsReU+0h01UUNMlklZCdWKwClqbVWntdF1qIH7CUQl1cccaBC1hSbQA3q7UGA+rXZzHi54LrsIkYa6Oc/BpoFM9ZgG596w== nixos1@nixos"
+    #  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9jjcmrAlCiHWtdRC09CHZb0O9/UoR+FXyp45gvQxIVtxttC/uEp0GyoAYlt21AxuQ0T931Hztrqs+4HOZzIBZaytkG586qUEec/qznxXTgYtVpWUaKk2uFve9GfhohUO7sF0sRO2X+tlzvvFXLnpsNKd0paqQOUuidNHhufhKsVfRfrfPcEP03jxZEDu1XBy+Q3SyGTlOieL1e7+BLVA5bpeUM9hv2XZ0tldouyjmYoCgJiLDGaZjaYFtbsXwDSLiUiy22bjlpYtA5m1368zWPjtZVvX4xoLtFAc915qtpTuQVxsgp1BeFPFwpb/0L5KXozHb4gkX2IUyUHcq5CdVpDwoPYFS7XSBoOMeVKm6LJefjJFFwA9MMnZzT0zssIzAB3tXMQY+I/mR1CitLpc43fpielVE7o/+dkoza1gGuJSzzlNtp60mqWgX5BlT5IX/HQVP59cdgF2GK9S67r6dTHyhlIkiM0IpxXSUxA/Z//pMu+QjSfHHBN3rNu6xbN8= nixos2@nixos"
     #];
   };
 
   ##############################
   ######user setting
   ##############################
-  home-manager.users.hacker = {
+  home-manager.users.nixos = {
     nixpkgs.config.allowUnfree = true;
     imports =
       [
