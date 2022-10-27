@@ -16,7 +16,7 @@ help:
 
 # Default rule
 all:
-	nix-shell --command 'nixos-generate -c ./configuration.nix -f vm-nogui -o ./dist'
+	nix-shell --command 'nixos-generate -c ./configuration_gitpod.nix -f vm-nogui -o ./dist'
 
 # Boots the iso into a virtual machine
 start: all
@@ -27,7 +27,7 @@ start: all
 
 ssh:
 	while ! nc -z 127.0.0.1 2222; do sleep 0.1; done
-	sshpass  -p 'password' ssh -o StrictHostKeychecking=no -p 2222 nixos@127.0.0.1				
+	sshpass  -p 'password' ssh -o StrictHostKeychecking=no -p 2222 nixos@127.0.0.1
 
 # Clean the project by removing the iso
 clean:

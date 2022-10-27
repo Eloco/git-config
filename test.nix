@@ -8,7 +8,7 @@
 
   enableOCR = true;
 
-  machine = ./configuration.nix;
+  machine = ./configuration_gitpod.nix;
 
   testScript = ''
     start_all()
