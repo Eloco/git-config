@@ -32,6 +32,7 @@ $ tree
 ## Note
 
 - not use flake due to i think it is heavy
+- if u use my ./home-manager/vim-plug.vimrc, vim-plug will auto install, and need run :PlugInstall or ,s -> ,,i to install other plugin in ./home-manager/vim-plug.vimrc
 
 ## gitpod
 
