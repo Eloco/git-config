@@ -29,7 +29,3 @@ $ tree
 
 - not use flake due to i think it is heavy
 - if u use my ./home-manager/vim-plug.vimrc, vim-plug will auto install, and need run :PlugInstall or ,s -> ,,i to install other plugin in ./home-manager/vim-plug.vimrc
-
-## gitpod
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Eloco/nixos-config)
