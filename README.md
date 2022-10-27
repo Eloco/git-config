@@ -34,6 +34,4 @@ $ tree
 
 ## gitpod
 
->due to the 10G storage limit of Gitpod, Gitpod use ./packages.nix.gitpod which is just contains couple of packages. just show u part of the build process.
-
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Eloco/nix-config)
