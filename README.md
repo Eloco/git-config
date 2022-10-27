@@ -6,6 +6,7 @@ $ tree
 
 ├── .gitpod.Dockerfile      # [test]git pod dockerfile
 ├── .gitpod.yml             # [test]git pod setting in yaml
+├── .envrc                  # [test]git pod use
 ├── Makefile                # [test]git pod makefile
 ├── LICENSE                 # LICENSE
 ├── README.md               # README
