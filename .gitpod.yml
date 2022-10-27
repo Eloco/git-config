@@ -9,7 +9,6 @@ tasks:
       htop
   - name: vm - console
     command: |
-      cp ./packages.nix.gitpod ./packages.nix
       direnv allow
       make start
 
