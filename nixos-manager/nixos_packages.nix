@@ -12,6 +12,9 @@
     ];
     normal = with pkgs; [
       #libreoffice
+      p7zip # A new p7zip fork with additional codecs and improvements
+      unrar # Utility for RAR archives
+      unzip # An extraction utility for archives compressed in .zip format
       ack
       killall
       wget
