@@ -96,7 +96,7 @@ in
   ##############################
   security.sudo.enable = true;
   security.sudo.extraRules = [{
-    users = [ "eloco" ];
+    users = [ "hacker" ];
     commands = [{
       command = "ALL";
       options = [ "NOPASSWD" ];
