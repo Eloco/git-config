@@ -112,6 +112,7 @@
     ];
 
     shellAliases = {
+      eof="cat << 'EOF' >";
       update = "sudo nixos-rebuild switch";
       tmux="tmux -2 -u";
       pep8="autopep8 --in-place --aggressive --aggressive";
