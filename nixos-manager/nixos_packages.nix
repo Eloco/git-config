@@ -26,6 +26,7 @@
       neovim
       openssh
       git
+      tailscale
       gh
       #nix-prefetch-github
     ];
