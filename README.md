@@ -1,4 +1,4 @@
-# nix-conifg
+# nix-config
 my NixOS config
 
 ```bash
