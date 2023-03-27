@@ -164,7 +164,6 @@ in
   #    #${tailscale}/bin/tailscale up --accept-routes--authkey $(cat /etc/tailscale/tskey-reusable)
   #};
 
-
   ##############################
   ######xserver setting
   ##############################
